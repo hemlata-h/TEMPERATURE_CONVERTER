@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="temp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="inner">
+            <div>
+                <h1>Temperature Converter</h1>
+                <i class="fa fa-sun-o" aria-hidden="true"></i>
+            </div>
+            <div class="firstInput">
+                <input type="number" id="inputValue" placeholder="Enter value">
+                <select id="inputUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <div class="secInput">
+                <input type="number" id="outputValue" placeholder="Converted value" readonly>
+                <select id="outputUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <button class="convertBtn" onclick="convertTemp()">Convert</button>
+        </div>
+    </div>
+
+    <script src="temp.js"></script>
+</body>
+</html>
